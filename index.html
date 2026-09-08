@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Box - Watch Movies & Videos</title>
+    <meta name="description" content="Watch your favorite movies and videos online for free.">
+    
+    <!-- Social Media Sharing Meta Tags (AI/Bot Friendly) -->
+    <meta property="og:title" content="Movie Box - Watch Online">
+    <meta property="og:description" content="Click to watch trending movies and videos.">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* Base Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0b0f19;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Top & Bottom Ad Containers */
+        .ad-space {
+            width: 100%;
+            min-height: 90px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888888;
+            font-size: 13px;
+        }
+
+        .top-ad {
+            margin-bottom: 15px;
+        }
+
+        .bottom-ad {
+            margin-top: 15px;
+        }
+
+        /* Main Content Box */
+        .main-container {
+            max-width: 450px;
+            width: 90%;
+            margin: 10px auto;
+            padding: 25px 20px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Title & Description */
+        .site-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: #e50914;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .site-desc {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #dddddd;
+            margin-bottom: 20px;
+        }
+
+        .highlight-text {
+            color: #00f2fe;
+            font-weight: 600;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Animated Pointer (Up-Down Hand/Arrow) */
+        .pointer-container {
+            margin: 10px 0;
+        }
+
+        .pointer-icon {
+            font-size: 42px;
+            display: inline-block;
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(12px);
+            }
+        }
+
+        /* Glowing Light Button (Gemini / AI Border Effect) */
+        .btn-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            max-width: 360px;
+            margin: 15px 0;
+            border-radius: 50px;
+            padding: 4px;
+            background: linear-gradient(90deg, #ff007f, #7928ca, #00f2fe, #ff007f);
+            background-size: 300% 300%;
+            animation: glowingBorder 3s infinite linear;
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.5), 0 0 45px rgba(121, 40, 202, 0.4);
+        }
+
+        @keyframes glowingBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .main-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 18px 20px;
+            background-color: #101625;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 46px;
+            transition: transform 0.2s ease, background 0.3s;
+        }
+
+        .main-btn:active, .main-btn:hover {
+            transform: scale(0.98);
+            background-color: #172036;
+        }
+
+        .btn-text-primary {
+            font-size: 21px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.6);
+        }
+
+        .btn-text-secondary {
+            font-size: 13px;
+            color: #00f2fe;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .click-note {
+            font-size: 13px;
+            color: #999999;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP VIDEO AD SPACE -->
+    <div class="ad-space top-ad">
+        <!-- এখানে আপনার টপ ভিডিও বিজ্ঞাপনের কোড/স্ক্রিপ্ট বসাবেন -->
+        <p>Top Video Advertisement</p>
+    </div>
+
+    <!-- MAIN LANDING CONTENT -->
+    <div class="main-container">
+        
+        <!-- Header Name -->
+        <h1 class="site-title">🎬 MOVIE BOX 🎬</h1>
+
+        <!-- Short Description -->
+        <p class="site-desc">
+            যেকোনো সিনেমা ও ভিডিও ফ্রিতে দেখতে নিচের বাটনে ক্লিক করুন।
+            <span class="highlight-text">Click the button below to watch full movies & videos.</span>
+        </p>
+
+        <!-- Top Pointer Animation -->
+        <div class="pointer-container">
+            <span class="pointer-icon">👇</span>
+        </div>
+
+        <!-- Glowing Animated Button -->
+        <div class="btn-wrapper">
+            <a href="https://movie-box-wine-seven.vercel.app/" class="main-btn" target="_blank" rel="noopener noreferrer">
+                <span class="btn-text-primary">▶️ মূল ওয়েবসাইট খুলুন</span>
+                <span class="btn-text-secondary">Click Here To Open Website</span>
+            </a>
+        </div>
+
+        <!-- Bottom Pointer Animation -->
+        <div class="pointer-container">
+            <span class="pointer-icon">👆</span>
+        </div>
+
+        <!-- Help Note for Absolute Beginners -->
+        <p class="click-note">
+            সহজে দেখার জন্য উপরের বড় লাইটিং বাটনটিতে চাপ দিন।
+        </p>
+
+    </div>
+
+    <!-- BOTTOM VIDEO AD SPACE -->
+    <div class="ad-space bottom-ad">
+        <!-- এখানে আপনার বটম ভিডিও বিজ্ঞাপনের কোড/স্ক্রিপ্ট বসাবেন -->
+        <p>Bottom Video Advertisement</p>
+    </div>
+
+</body>
+</html>
